@@ -62,4 +62,10 @@ destroot {
 
     ln -s ${applications_dir}/WezTerm.app/Contents/MacOS/wezterm \
         ${destroot}${prefix}/bin/
+    ln -s ${applications_dir}/WezTerm.app/Contents/MacOS/wezterm-gui \
+        ${destroot}${prefix}/bin/
+    ln -s ${applications_dir}/WezTerm.app/Contents/MacOS/wezterm-mux-server \
+        ${destroot}${prefix}/bin/
+    ln -s ${applications_dir}/WezTerm.app/Contents/MacOS/strip-ansi-escapes \
+        ${destroot}${prefix}/bin/
 }
